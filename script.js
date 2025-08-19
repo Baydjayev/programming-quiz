@@ -25,7 +25,7 @@ const timerDiv = document.getElementById('timer');
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 15; // 15 soniya har savol
+let timeLeft = 15;
 
 startBtn.addEventListener('click', startQuiz);
 
@@ -70,7 +70,6 @@ function checkAnswer(e) {
     e.target.classList.add('correct');
   } else {
     e.target.classList.add('wrong');
-    // To‘g‘ri javobni ko‘rsatish
     buttons.forEach(btn => {
       if (btn.textContent === questions[currentQuestion].answer) btn.classList.add('correct');
     });
