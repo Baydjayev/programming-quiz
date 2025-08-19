@@ -1,0 +1,66 @@
+[
+  {"question":"Python’da funksiya qanday e’lon qilinadi?","options":["def foo():","function foo()","func foo()","fn foo()"],"answer":"def foo():"},
+  {"question":"Quyidagi kod natijasi: len([1,2,3]) ?","options":["3","2","1","0"],"answer":"3"},
+  {"question":"print(type({})) natijasi?","options":["<class 'dict'>","<class 'set'>","<class 'list'>","<class 'tuple'>"],"answer":"<class 'dict'>"},
+  {"question":"print(type(())) natijasi?","options":["<class 'tuple'>","<class 'list'>","<class 'set'>","<class 'dict'>"],"answer":"<class 'tuple'>"},
+  {"question":"print(type([])) natijasi?","options":["<class 'list'>","<class 'tuple'>","<class 'set'>","<class 'dict'>"],"answer":"<class 'list'>"},
+  {"question":"print(type(set())) natijasi?","options":["<class 'set'>","<class 'dict'>","<class 'list'>","<class 'tuple'>"],"answer":"<class 'set'>"},
+  {"question":"Python’da kommentariya qanday yoziladi?","options":["# ...","// ...","/* ... */","<!-- ... -->"],"answer":"# ..."},
+  {"question":"`if` blokini to‘g‘ri yozish?","options":["if x>0:","if x>0 then","if (x>0) then","if x>0 {}"],"answer":"if x>0:"},
+  {"question":"`elif` nimaga xizmat qiladi?","options":["Qo‘shimcha shart","Loop tugatish","Modul import","Fayl ochish"],"answer":"Qo‘shimcha shart"},
+  {"question":"`else` qachon ishlaydi?","options":["Hech bir shart bajarilmaganda","Har doim","Shart bajarilganda","Faqat try bilan"],"answer":"Hech bir shart bajarilmaganda"},
+
+  {"question":"`range(5)` nimalarni beradi?","options":["0..4","1..5","0..5","1..4"],"answer":"0..4"},
+  {"question":"`for i in range(3): print(i)` chiqishi?","options":["0 1 2","1 2 3","0 1 2 3","2 1 0"],"answer":"0 1 2"},
+  {"question":"`break` nima qiladi?","options":["Loopni to‘xtatadi","Keyingi iteratsiyaga o‘tadi","Funksiyani qaytaradi","Hech narsa"],"answer":"Loopni to‘xtatadi"},
+  {"question":"`continue` nima qiladi?","options":["Keyingi iteratsiyaga o‘tadi","Loopni to‘xtatadi","Funksiyani qaytaradi","Hech narsa"],"answer":"Keyingi iteratsiyaga o‘tadi"},
+  {"question":"`pass` nima?","options":["Bo‘sh operator","Break","Continue","Return"],"answer":"Bo‘sh operator"},
+
+  {"question":"`list.append(x)` nima qiladi?","options":["Oxiriga qo‘shadi","Boshiga qo‘shadi","O‘chiradi","Tartiblaydi"],"answer":"Oxiriga qo‘shadi"},
+  {"question":"`list.pop()` nima qaytaradi?","options":["Oxirgi element","Birinchi element","Index","Hech narsa"],"answer":"Oxirgi element"},
+  {"question":"`list.extend([1,2])`?","options":["Birlashtiradi","O‘rnini bosadi","Tozalaydi","Nusxa oladi"],"answer":"Birlashtiradi"},
+  {"question":"`list.sort()` nima qiladi?","options":["Tartiblaydi","Aylantiradi","Qo‘shadi","O‘chiradi"],"answer":"Tartiblaydi"},
+  {"question":"`sorted(list)`?","options":["Yangi tartiblangan nusxa","Joyida tartiblaydi","Teskari aylantiradi","Hech narsa"],"answer":"Yangi tartiblangan nusxa"},
+
+  {"question":"`dict.get('x',0)` vazifasi?","options":["Topilmasa 0 qaytaradi","Har doim 0","Xatolik","Nil qaytaradi"],"answer":"Topilmasa 0 qaytaradi"},
+  {"question":"`'a' in {'a':1}` natijasi?","options":["True","False","1","KeyError"],"answer":"True"},
+  {"question":"`len({'a':1,'b':2})`?","options":["2","1","3","0"],"answer":"2"},
+  {"question":"`dict.keys()` turi?","options":["dict_keys","list","tuple","set"],"answer":"dict_keys"},
+  {"question":"`dict.items()` nima?","options":["(key,value) juftlar","faqat value","faqat key","indexlar"],"answer":"(key,value) juftlar"},
+
+  {"question":"`'Py'.lower()`?","options":["'py'","'PY'","'Py'","'pY'"],"answer":"'py'"},
+  {"question":"`'py dev'.title()`?","options":["'Py Dev'","'PY DEV'","'py dev'","'Py dev'"],"answer":"'Py Dev'"},
+  {"question":"`'  x  '.strip()`?","options":["'x'","'  x'","'x  '","'  x  '"],"answer":"'x'"},
+  {"question":"`'1,2,3'.split(',')`?","options":["['1','2','3']","['1,2,3']","['1','23']","[]"],"answer":"['1','2','3']"},
+  {"question":"`'-'.join(['a','b'])`?","options":["'a-b'","'ab'","['a','b']","'a b'"],"answer":"'a-b'"},
+
+  {"question":"`try/except` nimaga xizmat qiladi?","options":["Xatolarni ushlash","Loop","Import","I/O"],"answer":"Xatolarni ushlash"},
+  {"question":"`finally` qachon ishlaydi?","options":["Har doim","Hech qachon","Faqat xato bo‘lsa","Faqat xato bo‘lmasa"],"answer":"Har doim"},
+  {"question":"`raise` nima qiladi?","options":["Xato ko‘taradi","Xatoni yopadi","Ogohlantiradi","Hech narsa"],"answer":"Xato ko‘taradi"},
+  {"question":"`assert` nima?","options":["Tekshiruv","Loop","Import","Dekorator"],"answer":"Tekshiruv"},
+  {"question":"`with open(...) as f:` afzalligi?","options":["Faylni avtomatik yopadi","Tez ishlaydi","Kam xotira","Formatlaydi"],"answer":"Faylni avtomatik yopadi"},
+
+  {"question":"`lambda` nima?","options":["Anonim funksiya","Modul","Class","Generator"],"answer":"Anonim funksiya"},
+  {"question":"`map(func,iter)` nima qaytaradi?","options":["Iterator","List","Set","Dict"],"answer":"Iterator"},
+  {"question":"`filter(func,iter)` nima qaytaradi?","options":["Filtrlangan iterator","List","Hammasi","Dict"],"answer":"Filtrlangan iterator"},
+  {"question":"`sum([1,2,3])`?","options":["6","5","3","1"],"answer":"6"},
+  {"question":"`max([1,9,3])`?","options":["9","3","1","10"],"answer":"9"},
+
+  {"question":"`set([1,1,2])`?","options":["{1,2}","{1,1,2}","[1,2]","(1,2)"],"answer":"{1,2}"},
+  {"question":"`len(set([1,2,2,3]))`?","options":["3","4","2","1"],"answer":"3"},
+  {"question":"`{1,2} | {2,3}`?","options":["{1,2,3}","{2}","{1}","{3}"],"answer":"{1,2,3}"},
+  {"question":"`{1,2} & {2,3}`?","options":["{2}","{1,2,3}","{1,3}","{}"],"answer":"{2}"},
+  {"question":"`{1,2} - {2,3}`?","options":["{1}","{2}","{3}","{}"],"answer":"{1}"},
+
+  {"question":"`class` nima yaratadi?","options":["Sinf","Funksiya","Modul","Iterator"],"answer":"Sinf"},
+  {"question":"`__init__` nimaga xizmat qiladi?","options":["Konstruktor","Destructor","Getter","Setter"],"answer":"Konstruktor"},
+  {"question":"`self` nimani bildiradi?","options":["Obyektni","Modulni","Globalni","Faylni"],"answer":"Obyektni"},
+  {"question":"`@decorator` nima?","options":["Funktsiyani o‘rab beruvchi funksiya","Generator","Iterator","Klass"],"answer":"Funktsiyani o‘rab beruvchi funksiya"},
+  {"question":"`yield` nimaga xizmat qiladi?","options":["Generator yaratadi","Class yaratadi","Exception","Import"],"answer":"Generator yaratadi"},
+
+  {"question":"`import math`dan so‘ng `math.pi`?","options":["3.14159...","2.71828...","1.618...","0"],"answer":"3.14159..."},
+  {"question":"`random.randint(1,3)` oralig‘i?","options":["1..3 (butun)","0..2","1..2","2..3"],"answer":"1..3 (butun)"},
+  {"question":"`time.sleep(1)` nima qiladi?","options":["1 sekund kutadi","Tugadi","O‘chiradi","Uxlashga ketadi"],"answer":"1 sekund kutadi"},
+  {"question":"`json.loads('\"x\"')`?","options":["'x'","\"x\"","x","None"],"answer":"'x'"},
+  {"question":"`len('python')`?","options":["6","5","7","0"],"answer":"6"}
+]
