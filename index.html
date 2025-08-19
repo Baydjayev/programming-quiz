@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Quiz</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Python Quiz – Cheksiz</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Animatsion fon -->
+  <canvas id="bg-canvas"></canvas>
+
   <div class="container">
-    <h1>Programming Languages Quiz</h1>
-    <div id="quiz">
-      <button id="start-btn">Start Quiz</button>
+    <h1>Python Quiz</h1>
+
+    <div class="toolbar">
+      <div class="select-wrap">
+        <label for="mode">Rejim:</label>
+        <select id="mode">
+          <option value="infinite" selected>Cheksiz</option>
+          <option value="session">Sessiya (20 savol)</option>
+          <option value="custom">Sessiya (maxsus)</option>
+        </select>
+      </div>
+
+      <div class="select-wrap" id="custom-wrap" style="display:none;">
+        <label for="custom-count">Savollar soni:</label>
+        <input id="custom-count" type="number" min="5" max="200" value="20" />
+      </div>
+
+      <div class="select-wrap">
+        <label for="difficulty">Murakkablik:</label>
+        <select id="difficulty">
+          <option value="mixed" selected>Aralash</option>
+          <option value="easy">Oson</option>
+          <option value="medium">O‘rtacha</option>
+          <option value="hard">Qiyin</option>
+        </select>
+      </div>
     </div>
+
+    <div id="quiz">
+      <button id="start-btn">Boshlash</button>
+    </div>
+
     <div id="progress-container">
       <div id="progress-bar"></div>
     </div>
-    <div id="timer"></div>
+
+    <div class="status-row">
+      <div id="timer">Vaqt: —</div>
+      <div id="score">Ball: 0</div>
+      <div id="streak">Streak: 0</div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
