@@ -1,42 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Animatsiyali gradient fon */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   text-align: center;
 }
 
-.container {
-  margin: 50px auto;
-  width: 80%;
-  max-width: 600px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+/* Gradient fon animatsiyasi */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  max-width: 600px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Sarlavha */
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Savol */
+#quiz h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Tugmalar */
 button {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 18px;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+button:hover::after {
+  width: 100%;
 }
 
 button:hover {
-  opacity: 0.8;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .correct {
-  background-color: #4CAF50;
+  background-color: #4CAF50 !important;
   color: white;
 }
 
 .wrong {
-  background-color: #f44336;
+  background-color: #f44336 !important;
   color: white;
 }
 
+/* Progress bar */
 #progress-container {
   width: 100%;
   background-color: #ddd;
@@ -51,10 +114,13 @@ button:hover {
   width: 0%;
   background-color: #4CAF50;
   border-radius: 10px;
+  transition: width 0.5s ease;
 }
 
+/* Timer */
 #timer {
   margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
+  color: #333;
 }
